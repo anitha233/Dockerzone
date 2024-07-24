@@ -4,11 +4,11 @@ FROM amazoncorretto:17
 LABEL author="anitha"
 LABEL project="learning"
 #creating folder and adding permissions
-#RUN mkdir /spc && chown nobody /spc
+RUN mkdir /spc && chown nobody /spc
 #creating user
 USER nobody
 #change the current directory
-#WORKDIR /spc
+WORKDIR /spc
 # Download_url with a default value
 ARG DOWNLOAD_URL="https://khajareferenceapps.s3.ap-south-1.amazonaws.com/spring-petclinic-3.2.0-SNAPSHOT.jar"
 # download spring petclinic
