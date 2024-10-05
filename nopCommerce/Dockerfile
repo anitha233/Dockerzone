@@ -1,5 +1,5 @@
 FROM mcr.microsoft.com/dotnet/runtime:8.0
-LABEL AUTHOR="shaikkhajaibrahim"
+LABEL AUTHOR="anitha"
 RUN useradd -d /app -m -s /bin/bash nop
 USER nop
 WORKDIR /app
